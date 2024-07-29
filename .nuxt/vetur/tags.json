@@ -1,4 +1,13 @@
 {
+  "Customers": {
+    "description": "Auto imported from components/Customers.vue"
+  },
+  "Dropdown": {
+    "description": "Auto imported from components/Dropdown.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
   "Main": {
     "description": "Auto imported from components/main.vue"
   }
