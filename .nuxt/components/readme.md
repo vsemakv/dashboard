@@ -9,4 +9,3 @@ You can directly use them in pages and other components without the need to impo
 - `<Customers>` | `<customers>` (components/Customers.vue)
 - `<Dropdown>` | `<dropdown>` (components/Dropdown.vue)
 - `<Header>` | `<header>` (components/Header.vue)
-- `<Main>` | `<main>` (components/main.vue)

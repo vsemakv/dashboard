@@ -1,7 +1,6 @@
 export { default as Customers } from '../../components/Customers.vue'
 export { default as Dropdown } from '../../components/Dropdown.vue'
 export { default as Header } from '../../components/Header.vue'
-export { default as Main } from '../../components/main.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

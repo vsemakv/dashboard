@@ -79,6 +79,10 @@ import { mapGetters } from "vuex";
             left: 0; 
         }
     }
+
+    @media screen and (min-width: 1440px) {
+        display: none;
+    }
 }
 .header__burger > li:nth-child(1) { top: 0; }
 .header__burger > li:nth-child(2) { top: 50%; transform: translateY(-50%); }

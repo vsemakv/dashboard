@@ -1,10 +1,16 @@
 <template lang="pug">
     .dropdown(:class="{'open-dropdown': isShowBurger}")
-        ul.dropdown__links
-            li(v-for="link in sections" :key="link.id" :class="{'acitve-link': !link.isNuxt}").dropdown__links--item
-                n-link(:to="link.route").dropdown__links--item-link 
-                    img(:src="link.logo")
-                    p {{ link.title }}
+        .container 
+            .dropdown__logo
+                    img(src="/images/svg/Logo.svg" alt="Logo Dashboard").header__logo
+                    n-link(to="/")
+                        h1 Dashboard 
+                            span v.01
+            ul.dropdown__links
+                li(v-for="link in sections" :key="link.id" :class="{'acitve-link': !link.isNuxt}").dropdown__links--item
+                    n-link(:to="link.route").dropdown__links--item-link 
+                        img(:src="link.logo")
+                        p {{ link.title }}
         .dropdown__user 
             img.dropdown__user--img(src="/images/Avatar.png")
             .dropdown__user--text
@@ -94,13 +100,45 @@ import { mapGetters } from "vuex";
 
     overflow-y: scroll;
 
+    @media screen and (min-width: 1440px) {
+        height: 100%;
+        width: 306px;
+
+        position: fixed;
+
+        padding: 36px 28px 76px;
+    }
+    &__logo {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 37px;
+            height: 37px;
+            margin-right: 8px;
+        }
+        h1 {
+            font-size: 26px;
+            span {
+                font-size: 10px;
+                color: #838383;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            display: flex;
+            justify-content: flex-start;
+
+            margin-bottom: 65px;
+        }
+    }
     &__links{ 
 
         &--item { 
             position: relative;
 
-            margin-bottom: 30px;
-            padding: 12px;
+            margin-bottom: 16px;
+            padding: 10px;
 
             border-radius: 8px;
 
@@ -115,6 +153,11 @@ import { mapGetters } from "vuex";
                 top: 50%;
                 background-size: contain;
                 transform: translateY(-50%);
+
+                @media screen and (min-width: 1440px) {
+                    width: 16px;
+                    height: 16px;
+                }
             }
             &-link{ 
                 display: flex;
@@ -124,10 +167,20 @@ import { mapGetters } from "vuex";
                     margin-right: 14px;
                     width: 44px;
                     height: 44px;
+
+                    @media screen and (min-width: 1440px) {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
                 p { 
                     font-size: 24px;
                     color: #9197B3;
+
+                    @media screen and (min-width: 1440px) {
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
                 }
             }
         }
@@ -177,6 +230,11 @@ import { mapGetters } from "vuex";
         background-size: contain;
         background-repeat: no-repeat;
         transform: translateY(-50%);
+
+        @media screen and (min-width: 1440px) {
+            width: 11px;
+            height: 11px;
+        }
     }
 }
 </style>

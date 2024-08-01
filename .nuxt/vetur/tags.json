@@ -7,8 +7,5 @@
   },
   "Header": {
     "description": "Auto imported from components/Header.vue"
-  },
-  "Main": {
-    "description": "Auto imported from components/main.vue"
   }
 }

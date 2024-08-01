@@ -164,6 +164,11 @@ import { mapGetters } from "vuex";
 <style lang="scss" scoped>
 .customers { 
     padding: 12px 24px;
+
+    @media screen and (min-width: 1440px) {
+        // width: 100%;
+        padding: 41px 95px 0px 377px;
+    }
     &__header {
         padding: 16px;
 
@@ -173,6 +178,10 @@ import { mapGetters } from "vuex";
                 &:first-child { 
                     font-weight: 500;
                     font-size: 24px;
+
+                    @media screen and (min-width: 1440px) {
+                        font-size: 22px;
+                    }
                 }
                 &:last-child { 
                     font-weight: 300;
@@ -192,14 +201,36 @@ import { mapGetters } from "vuex";
                 background-color: transparent;
                 border: none;
                 width: 100%;
+                height: 100%;
                 outline: none;
             }
+
+            img {
+                @media screen and (min-width: 1440px) {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 8px;
+                }
+            }
+            @media screen and (min-width: 1440px) {
+                padding: 7px 8px;
+                border-radius: 10px;
+                height: 38px;
+                width: 216px;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 50px 24px 38px;
+
         }
     }
     &__table { 
             width: 100%;
             border-collapse: collapse;
-
             thead {
                 tr {
                     th {
@@ -209,43 +240,68 @@ import { mapGetters } from "vuex";
                         color: #B5B7C0; 
                         background-color: #fff;
                         border-bottom: 1px solid #EEEEEE;
+
+                        @media screen and (min-width: 1440px) {
+                            &:first-child { 
+                                padding-left: 38px;
+                            }
+                            &:last-child { 
+                                padding: 14px 24px 14px 35px;
+                            }
+                        }
+                        @media screen and (min-width: 1440px) {
+                            font-size: 14px;
+                            font-weight: 300;
+                            padding: 14px 24px;
+                        }
                     }
                 }
             }
 
             tbody {
                 tr {
-                &:hover {
-                    background-color: #f1f1f1;
-                }
+                    td {
+                        padding: 10px;
+                        white-space: nowrap;
+                        position: relative;
+                        border-bottom: 1px solid #EEEEEE;
 
-                td {
-                    padding: 10px;
-                    border-bottom: 1px solid #EEEEEE;
-                    white-space: nowrap;
+                        
+                        @media screen and (min-width: 1440px) {
+                            font-size: 14px;
+                            font-weight: 300;
+                            border: none;
+                            padding: 24px 24px;
+                        }
+                        &:nth-child(n+2):nth-child(-n+5) {
+                            @media screen and (min-width: 1440px) {
+                                border-bottom: 1px solid #EEEEEE;
+                            }
+                        }
+                        
 
-                    .status-active {
-                        display: block;
-                        color: #008767;
-                        background-color: rgba(22, 192, 152, .38);
-                        padding: 4px 12px;
-                        border-radius: 5px;
-                        border: 1px solid #00B087;
-                        font-size: 14px;
-                        text-align: center;
+                        .status-active {
+                            display: block;
+                            color: #008767;
+                            background-color: rgba(22, 192, 152, .38);
+                            padding: 4px 12px;
+                            border-radius: 5px;
+                            border: 1px solid #00B087;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+
+                        .status-inactive {
+                            display: block;
+                            color: #DF0404;
+                            background-color: #FFC5C5;
+                            padding: 4px 12px;
+                            border: 1px solid #DF0404;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            text-align: center;
+                        }
                     }
-
-                    .status-inactive {
-                        display: block;
-                        color: #DF0404;
-                        background-color: #FFC5C5;
-                        padding: 4px 12px;
-                        border: 1px solid #DF0404;
-                        border-radius: 5px;
-                        font-size: 14px;
-                        text-align: center;
-                    }
-                }
                 }
             }
     }
@@ -254,11 +310,16 @@ import { mapGetters } from "vuex";
         align-items: center;
         flex-direction: column-reverse;
 
-        margin-top: 20px;
-        padding: 0 10px 10px;
+        padding: 20px 10px 10px 10px;
+
+        @media screen and (min-width: 1440px) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 32px 40px 40px 38px; 
+        }
         &--text { 
             color: #B5B7C0;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 14px;
         }
         &--pagination { 
@@ -286,6 +347,10 @@ import { mapGetters } from "vuex";
     &__user { 
         font-size: 24px;
         margin-bottom: 8px;
+
+        @media screen and (min-width: 1440px) {
+            margin-bottom: 51px;
+        }
     }
 }
 .container { 
@@ -302,7 +367,6 @@ import { mapGetters } from "vuex";
 
 .customers__footer {
     text-align: center;
-    margin-top: 20px;
 }
 
 .pagination button {
@@ -317,5 +381,37 @@ import { mapGetters } from "vuex";
     color: white;
     border-radius: 4px;
 }
-
+.customers__table tbody tr td{
+    &:first-child {
+        @media screen and (min-width: 1440px) {
+            padding-left: 38px;
+        }
+        &::after { 
+            @media screen and (min-width: 1440px) {
+                content: "";
+                position: absolute;
+                bottom: -0.5px;
+                left: 40px;
+                right: 0px;
+                height: 1px;
+                background-color: #EEEEEE;
+            }
+        }
+    }
+    &:last-child { 
+        @media screen and (min-width: 1440px) {
+            padding-right: 44px;
+        }
+        &::after { 
+            content: "";
+            position: absolute;
+            bottom: -0.5px;
+            right: 40px;
+            left: 0px;
+            height: 1px;
+            background-color: #EEEEEE;
+        }
+    }
+  
+}
 </style>
