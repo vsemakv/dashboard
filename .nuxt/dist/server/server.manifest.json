@@ -1,0 +1,17 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/customers.js": "components/customers.js",
+    "components/dropdown.js": "components/dropdown.js",
+    "components/header.js": "components/header.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/customers.js": "components/customers.js.map",
+    "components/dropdown.js": "components/dropdown.js.map",
+    "components/header.js": "components/header.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
