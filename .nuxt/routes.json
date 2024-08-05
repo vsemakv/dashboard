@@ -3,7 +3,6 @@
     "name": "index",
     "path": "/",
     "component": "/Users/vladsemak/Desktop/github/dashboard/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_6586230e"
+    "chunkName": "pages/index"
   }
 ]

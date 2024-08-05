@@ -12,7 +12,7 @@ Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: '/dashboard/',
+  base: '/',
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
