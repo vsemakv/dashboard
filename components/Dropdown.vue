@@ -42,35 +42,35 @@ import { mapGetters } from "vuex";
                             id: 1,
                             isNuxt: true,
                             title: "Product",
-                            route: `/product`,
+                            // route: `/product`,
                             logo: "/images/svg/product.svg"
                         },
                         {
                             id: 2,
                             isNuxt: false,
                             title: "Customers",
-                            route: "/customers",
+                            // route: "/customers",
                             logo: "images/svg/user.svg"
                         },
                         {
                             id: 3,
                             isNuxt: true,
                             title: "Income",
-                            route: "/income",
+                            // route: "/income",
                             logo: "images/svg/income.svg"
                         },
                         {
                             id: 4,
                             isNuxt: true,
                             title: "Promote",
-                            route: "/promote",
+                            // route: "/promote",
                             logo: "images/svg/promote.svg"
                         },
                         {
                             id: 5,
                             isNuxt: true,
                             title: "Help",
-                            route: "/help",
+                            // route: "/help",
                             logo: "images/svg/help.svg"
                         },
                     ],
