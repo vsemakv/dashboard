@@ -192,7 +192,7 @@ import { mapGetters } from "vuex";
         }
         &--input { 
             display: flex;
-
+            align-items: center;
             background-color: #F9FBFF;
             padding: 8px;
             border-radius: 8px;

@@ -88,7 +88,7 @@ import { mapGetters } from "vuex";
     overflow: hidden;
     width: 100%;
     background: #FFFFFF;
-    transition: height 0.5s;
+    transition: all 0.5s;
 
     z-index: 1;
 
@@ -206,7 +206,7 @@ import { mapGetters } from "vuex";
     }
 }
 .open-dropdown {
-    transition: height 0.5s;
+    transition: padding height 0.5s;
     height: 100vh;
     padding: 100px 28px 28px 28px;
 }
