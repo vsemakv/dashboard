@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "generate": "nuxt generate",
-    "deploy": "nuxt generate && gh-pages -d dist"
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "core-js": "^3.19.3",

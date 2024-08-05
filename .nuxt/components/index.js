@@ -1,6 +1,6 @@
-export { default as Customers } from '../../components/Customers.vue'
-export { default as Dropdown } from '../../components/Dropdown.vue'
-export { default as Header } from '../../components/Header.vue'
+export const Customers = () => import('../../components/Customers.vue' /* webpackChunkName: "components/customers" */).then(c => wrapFunctional(c.default || c))
+export const Dropdown = () => import('../../components/Dropdown.vue' /* webpackChunkName: "components/dropdown" */).then(c => wrapFunctional(c.default || c))
+export const Header = () => import('../../components/Header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
